@@ -1,0 +1,22 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+ <head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>my 404</title> 
+ </head> 
+ <body> 
+ <h3>Sorry page does not exist </h3> 
+ <h1 id="id01">AAAA</h1> 
+ <h1 id="id02">AAAA</h1> 
+ </body> 
+<script> 
+ const date = new Date(); 
+ const date1 = date.toLocaleString("en-uk", { 
+ hour12: true, weekday: "short", hour: "2-digit", minute: "2-digit", second: 
+"2-digit", month: "2-digit", year: "numeric", day: "2-digit" }); 
+ document.getElementById("id01").innerHTML = "" + date1; 
+ document.getElementById("id02").innerHTML = "" + Date.now(); 
+</script> 
+</html>
